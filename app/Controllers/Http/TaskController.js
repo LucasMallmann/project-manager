@@ -19,7 +19,7 @@ class TaskController {
    * @param {Response} ctx.response
    * @param {View} ctx.view
    */
-  async index ({ request, response, params }) {
+  async index ({ params }) {
     const tasks = await Task.query()
       .where('project_id', params.projects_id)
       .with('user')

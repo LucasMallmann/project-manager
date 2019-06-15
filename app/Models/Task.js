@@ -13,7 +13,7 @@ class Task extends Model {
   }
 
   file () {
-    return this.belongsTo('App/Models/File')
+    return this.hasMany('App/Models/File')
   }
 }
 
