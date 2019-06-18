@@ -7,6 +7,7 @@
 const BaseExceptionHandler = use('BaseExceptionHandler')
 const Env = use('Env')
 const Youch = use('youch')
+const Raven
 
 /**
  * This class handles all exceptions thrown during
